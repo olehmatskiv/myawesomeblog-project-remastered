@@ -1,0 +1,7 @@
+virtenv\Scripts\activate
+django-admin startproject NAME PROJECT
+python manage.py runserver
+
+git status
+git add .
+git commit -m""
