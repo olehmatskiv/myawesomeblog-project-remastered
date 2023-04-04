@@ -1,7 +1,10 @@
 virtenv\Scripts\activate
 django-admin startproject NAME PROJECT
 python manage.py runserver
+python manage.py migrate
 
 git status
 git add .
 git commit -m""
+
+Oleh 17202630Aa
