@@ -36,23 +36,25 @@
     </header>
 
     <main role="main" class="ps-5">
+        <div class="conteiner">
+            <h1 class="pt-4 pb-5">Recent Posts</h1>
 
-        <h1 class="pt-4 pb-5">Recent Posts</h1>
-
-        {% for post in posts.all %}
-        <h3>{{post.post_title}}</h3> 
-        <br>
-        <img class="img-fluid" src="{{post.post_image.url}}" height="300" width= "300"alt="">
+            {% for post in posts.all %}
+            <a href=""><h3>{{post.post_title}}</h3></a>
+            <br>
+            <img class="img-fluid" src="{{post.post_image.url}}" height="300" width= "300"alt="">
+            
+            <br>
+            <p class="">
+                {{post.get_someText}}
+            </p>
+            
+            {{post.post_date}}
+            <br>
+            <br>
+            {% endfor %}
+        </div>
         
-        <br>
-        <p class="">
-            {{post.post_text}}
-        </p>
-        
-        {{post.post_date}}
-        <br>
-        <br>
-        {% endfor %}
     </main>
     
 </body>
