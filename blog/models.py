@@ -11,3 +11,6 @@ class Post(models.Model):
     def get_someText(self):
 
         return self.post_text[:50]
+
+    def __str__(self) -> str:
+        return self.post_title
